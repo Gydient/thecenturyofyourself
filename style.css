@@ -1,0 +1,154 @@
+/* Reset CSS */
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  /* background: #103523; */
+  background: #000080;
+  z-index: 0;
+  font-size: 24px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, button, input, label {
+  cursor: pointer
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+/* Your CSS */
+
+a {
+  color: #FC5001;
+}
+
+p {
+  font-size: 50px;
+  font-size: 4vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+
+  color: #FC5001;
+  text-align: left;
+
+  margin: 20px 0 20px 20px;
+}
+
+a{
+  word-break: break-all;
+}
+
+h1 {
+  font-size: 150px;
+  font-size: 11vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  letter-spacing: -0.0em;
+  line-height: 85%;
+
+  color: #F4BA16;
+  text-align: left;
+
+  margin: 20px 0 50px 20px;
+}
+h2 {
+  font-size: 50px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  letter-spacing: -0.05em;
+  line-height: 85%;
+
+  color: white;
+  text-align: left;
+
+  margin: 0px 0 50px 20px;
+}
+
+button {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FC5001;
+  background: #F4BA16;
+  z-index: 0;
+
+  padding: 10px 80px 10px 80px;
+  margin: 80px 80px 80px 20px;
+}
+.left, .right{
+  width: 50vw;
+  position: relative;
+  float: left;
+  z-index: 0;
+}
+
+.right {
+  z-index: 9;
+}
+
+.button {
+  z-index: 10;
+  position: relative;
+  margin: 50px 20px 20px 20px;
+}
+img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	20% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2);
+		transform: translatey(-50px);
+	}
+	100% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+/* Media Queries */
+
+@media print {
+  *{
+    color-adjust: external;
+    -webkit-print-color-adjust: exact;
+  }
+
+  h1 {
+    font-size: 25vw;
+  }
+
+  p {
+    font-size: 7vw;
+    margin: 50px 20px 20px 20px;
+  }
+
+  .left, .right{
+    width: 100vw;
+    height: 50vh;
+  }
+
+
+}
